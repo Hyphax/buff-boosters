@@ -15,7 +15,7 @@ export const HeroSection = () => {
   }, []);
   
   return (
-    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20 pb-24 px-6 md:px-12">
+    <section id="hero" className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20 pb-24 px-6 md:px-12">
       {/* Grid Background with Animation */}
       <div className="absolute inset-0 grid-pattern opacity-40" />
       
@@ -34,7 +34,7 @@ export const HeroSection = () => {
             )}
             style={{ animationDelay: '0.1s' }}
           >
-            Game. Earn. Redeem. Repeat.
+            Game. Earn. Redeem. Repeat. | Gaming Loyalty Program
           </div>
           
           <h1 
@@ -44,8 +44,8 @@ export const HeroSection = () => {
             )}
             style={{ animationDelay: '0.2s' }}
           >
-            <span className="text-balance block mb-2">Level Up Your Gaming</span>
-            <span className="buff-gradient-text text-balance">With Real Rewards</span>
+            <span className="text-balance block mb-2">Earn Rewards While Gaming</span>
+            <span className="buff-gradient-text text-balance">Turn Playtime Into Real Value</span>
           </h1>
           
           <p 
@@ -55,7 +55,7 @@ export const HeroSection = () => {
             )}
             style={{ animationDelay: '0.3s' }}
           >
-            Buff turns your gaming time into points you can redeem for gift cards, gaming gear, and more. No interruptions, just rewards.
+            Buff is the ultimate <strong>gaming loyalty program</strong> that rewards you for playing your favorite games. Earn points while playing Fortnite, Valorant, Minecraft, and 100+ other games, then redeem for gift cards, gaming gear, and exclusive rewards.
           </p>
           
           {/* CTA Buttons */}
@@ -69,15 +69,17 @@ export const HeroSection = () => {
             <a 
               href="#download" 
               className="primary-btn flex items-center justify-center gap-2 text-lg"
+              aria-label="Download Buff App to earn gaming rewards"
             >
               <Download size={20} />
-              Download Buff Now
+              Download Buff App Now
             </a>
             <a 
               href="#features" 
               className="secondary-btn flex items-center justify-center gap-2"
+              aria-label="Learn more about Buff rewards system"
             >
-              Learn More
+              Learn How to Earn Rewards
             </a>
           </div>
           
@@ -108,6 +110,7 @@ export const HeroSection = () => {
         <div className="absolute bottom-8 left-0 right-0 flex justify-center animate-bounce">
           <a href="#features" className="text-foreground/50 hover:text-buff">
             <ArrowDown size={24} />
+            <span className="sr-only">Scroll to see features</span>
           </a>
         </div>
       </div>

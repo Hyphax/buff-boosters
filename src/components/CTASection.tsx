@@ -51,25 +51,25 @@ export const CTASection = () => {
             <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
               <div className="md:w-2/3">
                 <h2 className="text-title-lg font-bold mb-4">
-                  Ready to <span className="buff-gradient-text">Turn Playtime</span> Into Rewards?
+                  Ready to <span className="buff-gradient-text">Earn Gaming Rewards</span> With Buff?
                 </h2>
                 
                 <p className="text-foreground/80 mb-6">
-                  Download Buff now and join over 1 million gamers who are earning rewards just by playing their favorite games. Get started with 100 bonus points – limited time offer!
+                  Download the Buff gaming rewards app now and join over 1 million gamers who are earning while playing Fortnite, Valorant, Minecraft and other favorite games. Get started with 100 bonus points – limited time offer!
                 </p>
                 
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center gap-2">
                     <div className="w-5 h-5 rounded-full bg-buff flex items-center justify-center text-buff-foreground text-xs">✓</div>
-                    <span>100% Free – No hidden fees or subscriptions</span>
+                    <span>100% Free Gaming Loyalty Program – No hidden fees or subscriptions</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-5 h-5 rounded-full bg-buff flex items-center justify-center text-buff-foreground text-xs">✓</div>
-                    <span>100+ Supported Games – Works with titles you already play</span>
+                    <span>100+ Supported Games – Earn with Fortnite, Valorant, Minecraft and more</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-5 h-5 rounded-full bg-buff flex items-center justify-center text-buff-foreground text-xs">✓</div>
-                    <span>Safe & Secure – No performance impact on your games</span>
+                    <span>Safe & Secure – No performance impact on your gaming experience</span>
                   </li>
                 </ul>
                 
@@ -77,15 +77,17 @@ export const CTASection = () => {
                   <a 
                     href="#" 
                     className="primary-btn flex items-center justify-center gap-2 text-lg"
+                    aria-label="Download Buff gaming rewards app for Windows"
                   >
                     <Download size={20} />
-                    Download for Windows
+                    Download Buff for Windows
                   </a>
                   <a 
                     href="#" 
                     className="secondary-btn flex items-center justify-center gap-2"
+                    aria-label="Download Buff gaming rewards app for Mac"
                   >
-                    Download for Mac
+                    Download Buff for Mac
                   </a>
                 </div>
                 
@@ -99,7 +101,7 @@ export const CTASection = () => {
                   <div className="absolute inset-0 bg-buff/20 rounded-full filter blur-xl animate-pulse-gentle" />
                   <div className="relative w-48 h-48 flex items-center justify-center rounded-full bg-background/80 backdrop-blur-sm border border-white/10">
                     <div className="text-center">
-                      <div className="text-sm font-medium text-foreground/70 mb-1">New users get</div>
+                      <div className="text-sm font-medium text-foreground/70 mb-1">New Buff users get</div>
                       <div className="text-4xl font-bold buff-gradient-text mb-1">100</div>
                       <div className="text-sm font-medium text-foreground/70">Bonus Points</div>
                     </div>

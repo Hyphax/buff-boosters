@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { Navbar } from '@/components/Navbar';
 import { HeroSection } from '@/components/HeroSection';
 import { FeaturesSection } from '@/components/FeaturesSection';
@@ -41,13 +42,22 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      <Helmet>
+        <title>Buff: Earn Rewards While Gaming | Download Now</title>
+        <meta name="description" content="Download Buff to earn rewards playing your favorite games like Valorant, Fortnite, and Minecraft. Join 1M+ gamers and start earning today!" />
+        <meta name="keywords" content="gaming rewards, buff app download, earn while gaming, gaming loyalty program, fortnite rewards, valorant points" />
+        <link rel="canonical" href="https://buff.game/" />
+      </Helmet>
+      
       <Navbar />
-      <HeroSection />
-      <FeaturesSection />
-      <HowItWorks />
-      <TestimonialsSection />
-      <FAQSection />
-      <CTASection />
+      <main>
+        <HeroSection />
+        <FeaturesSection />
+        <HowItWorks />
+        <TestimonialsSection />
+        <FAQSection />
+        <CTASection />
+      </main>
       <Footer />
     </div>
   );

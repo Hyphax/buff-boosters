@@ -1,7 +1,7 @@
-
 import React, { useEffect, useRef } from 'react';
-import { Award, Gift, Gamepad, Star } from 'lucide-react';
+import { Award, Gift, Gamepad, Star, Download } from 'lucide-react';
 import { BlurredCard } from './ui/BlurredCard';
+import { cn } from '@/lib/utils';
 
 export const FeaturesSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -18,7 +18,6 @@ export const FeaturesSection = () => {
               }, index * 100);
             });
             
-            // Unobserve after animation
             observer.unobserve(entry.target);
           }
         });
@@ -39,26 +38,26 @@ export const FeaturesSection = () => {
   
   const features = [
     {
-      title: "Earn While Playing",
-      description: "Earn Buff points just by playing your favorite games. No interruptions, no ads, just rewards.",
+      title: "Earn Rewards While Playing",
+      description: "Earn Buff points automatically while playing your favorite games like Fortnite, Valorant, and Minecraft. No interruptions, no ads, just rewards.",
       icon: <Gamepad className="text-buff" size={24} />,
       accent: "before:bg-games-valorant/20",
     },
     {
-      title: "Redeem Awesome Rewards",
-      description: "Redeem points for gift cards, gaming gear, and exclusive in-game items from top brands.",
+      title: "Redeem Gaming Gift Cards",
+      description: "Convert your Buff points into gift cards for Steam, PlayStation Store, Xbox, and more. You can also get gaming peripherals from top brands.",
       icon: <Gift className="text-buff" size={24} />,
       accent: "before:bg-games-fortnite/20",
     },
     {
-      title: "Support for Top Games",
-      description: "Works with games you already play like Fortnite, Valorant, Minecraft, CSGO, and more.",
+      title: "Wide Game Selection",
+      description: "Buff works with over 100 popular games including Fortnite, Valorant, Minecraft, CSGO, League of Legends, and more titles added regularly.",
       icon: <Star className="text-buff" size={24} />,
       accent: "before:bg-games-minecraft/20",
     },
     {
-      title: "Achievements & Bonuses",
-      description: "Complete achievements and daily bonuses to earn points faster and unlock exclusive rewards.",
+      title: "Achievement Bonuses",
+      description: "Complete in-game achievements and Buff challenges to earn bonus points. The better you play, the more rewards you'll earn.",
       icon: <Award className="text-buff" size={24} />,
       accent: "before:bg-games-csgo/20",
     },
@@ -73,13 +72,13 @@ export const FeaturesSection = () => {
       <div className="container relative z-10 mx-auto">
         <div className="reveal">
           <h2 className="section-title">
-            Features That <span className="buff-gradient-text">Level Up</span> Your Experience
+            <span className="buff-gradient-text">Gaming Rewards</span> That Level Up Your Experience
           </h2>
         </div>
         
         <div className="reveal">
           <p className="section-subtitle">
-            Buff is designed to seamlessly integrate with your gaming experience, providing rewards without changing how you play.
+            Buff is the ultimate gaming loyalty program designed to integrate seamlessly with your gaming experience, providing rewards without changing how you play.
           </p>
         </div>
         
@@ -107,16 +106,12 @@ export const FeaturesSection = () => {
         
         {/* CTA */}
         <div className="reveal mt-16 text-center">
-          <a href="#download" className="primary-btn inline-flex items-center justify-center gap-2">
+          <a href="#download" className="primary-btn inline-flex items-center justify-center gap-2" aria-label="Download Buff App now to start earning rewards">
             <Download size={18} />
-            Get Buff Now
+            Get Buff Gaming Rewards Now
           </a>
         </div>
       </div>
     </section>
   );
 };
-
-// Local imports
-import { Download } from 'lucide-react';
-import { cn } from '@/lib/utils';
