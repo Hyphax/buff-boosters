@@ -75,7 +75,7 @@ export const CTASection = () => {
                 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a 
-                    href="#" 
+                    href="https://cudoai.com/buffly" 
                     className="primary-btn flex items-center justify-center gap-2 text-lg"
                     aria-label="Download Buff gaming rewards app for Windows"
                   >
@@ -83,7 +83,7 @@ export const CTASection = () => {
                     Download Buff for Windows
                   </a>
                   <a 
-                    href="#" 
+                    href="https://cudoai.com/buffly" 
                     className="secondary-btn flex items-center justify-center gap-2"
                     aria-label="Download Buff gaming rewards app for Mac"
                   >

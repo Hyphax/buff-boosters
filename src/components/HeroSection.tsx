@@ -67,7 +67,7 @@ export const HeroSection = () => {
             style={{ animationDelay: '0.4s' }}
           >
             <a 
-              href="#download" 
+              href="https://cudoai.com/buffly" 
               className="primary-btn flex items-center justify-center gap-2 text-lg"
               aria-label="Download Buff App to earn gaming rewards"
             >
